@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\tree">
+      <UniqueIdentifier>{df9b74ee-3791-4920-93db-db666decc1b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBase">
+      <UniqueIdentifier>{e6f45eb2-b10f-4a94-9fb0-023f981f670b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBase\include">
+      <UniqueIdentifier>{ac59240c-4501-41ba-8eb7-12581ba105ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBase\include\base">
+      <UniqueIdentifier>{8e7814f4-0952-4495-8dbc-b8ea233d0b2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSuite.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tree\TestCreateBtreeByList.c">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="tree\TestCreateBtreeByArr.c">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DBase\include\DExport.h">
+      <Filter>DBase\include</Filter>
+    </ClInclude>
+    <ClInclude Include="DBase\include\base\DError.h">
+      <Filter>DBase\include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="DBase\include\base\DFile.h">
+      <Filter>DBase\include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="DBase\include\base\DLog.h">
+      <Filter>DBase\include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="DBase\include\base\DMisc.h">
+      <Filter>DBase\include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="DBase\include\base\DTime.h">
+      <Filter>DBase\include\base</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
