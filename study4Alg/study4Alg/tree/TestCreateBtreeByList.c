@@ -1,47 +1,49 @@
+#include <stdlib.h>
 #include <stdio.h>
-#include <malloc.h>
+#include "DTree.h"
 
-typedef struct tree
+static void CreateBTree(int unsorted[], int numUnsorted, TreeNode *root)
 {
-    int data;
-    struct tree *left, *right;
-}ElemBT;
+    for (int i = 1; i < numUnsorted; i++) {
+        TreeNode *p = (TreeNode *)malloc(sizeof(TreeNode));
+        p->data = unsorted[i];
+        p->left = NULL;
+        p->right = NULL;
 
-static void create_btree(ElemBT *root, int list[], int n) /*n表示list数组中元素的个数*/
-{
-    int i;
-    ElemBT *current, *parent, *p;
-
-    for (i = 1; i < n; i++)
-    {
-        p = (ElemBT *)malloc(sizeof(ElemBT));
-        p->left = p->right = NULL;
-        p->data = list[i];
-        current = root;
-        while (current != NULL)
-        {
+        TreeNode *parent = NULL;
+        TreeNode *current = root;
+        while (current != NULL) {
             parent = current;
-            if (current->data > p->data)
+            if (current->data > p->data) {
                 current = current->left;
-            else
+            } else {
                 current = current->right;
+            }
         }
-        if (parent->data > p->data)
+
+        if (parent->data > p->data) {
             parent->left = p;
-        else
+        } else {
             parent->right = p;
+        }
     }
 }
 
-int TestCreateBtreeByList()
+void TestCreateBtreeByList()
 {
-    int list[7] = { 30, 18, 16, 25, 34, 7, 31 };
-    ElemBT *root;
+    printf("%s\n", __FUNCTION__);
 
-    root = (ElemBT *)malloc(sizeof(ElemBT));
-    root->data = list[0];
-    root->left = root->right = NULL;
-    create_btree(root, list, 7);
+    int unsorted[7] = { 30, 18, 16, 25, 34, 7, 31 };
 
-    return 0;
+    TreeNode *root = (TreeNode *)malloc(sizeof(TreeNode));
+    root->data = unsorted[0];
+    root->left = NULL;
+    root->right = NULL;
+
+    CreateBTree(unsorted, sizeof(unsorted) / sizeof(int), root);
+
+    PrintTreeInorder(root);
+    printf("\n");
+
+    ReleaseTree(root);
 }

@@ -1,35 +1,37 @@
 #include <stdio.h>
 
-static void create_btree(int list[], int bt[], int n) /*n表示list数组中元素的个数*/
+static void CreateBTree(int unsorted[], int numUnsorted, int bTree[])
 {
-    int i, order;
+    bTree[1] = unsorted[0];
 
-    bt[1] = list[0];
-    for (i = 1; i < n; i++)
-    {
-        order = 1; /*每次进来从根结点开始比较*/
-        while (bt[order] != 0)
-        {
-            if (list[i] < bt[order])
-                order *= 2;
-            else
-                order = order * 2 + 1;
+    for (int i = 1; i < numUnsorted; i++) {
+        int pos = 1;
+        while (bTree[pos] != 0) {
+            if (unsorted[i] < bTree[pos]) {
+                pos *= 2;
+            } else {
+                pos = pos * 2 + 1;
+            }
         }
-        bt[order] = list[i];
+
+        bTree[pos] = unsorted[i];
     }
 }
 
-int TestCreateBtreeByArr()
+void TestCreateBtreeByArr()
 {
-    int list[7] = { 30, 18, 16, 25, 34, 7, 31 };
-    int bt[16] = { 0 };
-    int i;
+    printf("%s\n", __FUNCTION__);
 
-    create_btree(list, bt, 7);
-    for (i = 0; i < 16; i++) /*按层输出*/
-        //if (bt[i] != 0)
-        printf("%4d", bt[i]);
+    int unsorted[7] = { 30, 18, 16, 25, 34, 7, 31 };
+    int bTree[16] = { 0 };
+
+    CreateBTree(unsorted, sizeof(unsorted) / sizeof(int), bTree);
+
+    for (int i = 1; i < sizeof(bTree) / sizeof(int); i++) {
+        if (i > 1) {
+            printf("  ");
+        }
+        printf("%d", bTree[i]);
+    }
     printf("\n");
-
-    return 0;
 }

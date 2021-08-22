@@ -92,6 +92,7 @@
     <ClCompile Include="TestSuite.c" />
     <ClCompile Include="tree\TestCreateBtreeByArr.c" />
     <ClCompile Include="tree\TestCreateBtreeByList.c" />
+    <ClCompile Include="tree\DTree.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBase\include\base\DError.h" />
@@ -100,6 +101,7 @@
     <ClInclude Include="DBase\include\base\DMisc.h" />
     <ClInclude Include="DBase\include\base\DTime.h" />
     <ClInclude Include="DBase\include\DExport.h" />
+    <ClInclude Include="tree\DTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

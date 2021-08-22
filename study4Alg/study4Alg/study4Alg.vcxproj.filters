@@ -39,6 +39,9 @@
     <ClCompile Include="tree\TestCreateBtreeByArr.c">
       <Filter>源文件\tree</Filter>
     </ClCompile>
+    <ClCompile Include="tree\DTree.c">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBase\include\DExport.h">
@@ -58,6 +61,9 @@
     </ClInclude>
     <ClInclude Include="DBase\include\base\DTime.h">
       <Filter>DBase\include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="tree\DTree.h">
+      <Filter>源文件\tree</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
