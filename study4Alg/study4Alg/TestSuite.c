@@ -3,6 +3,7 @@
 
 extern void TestCreateBtreeByArr();
 extern void TestCreateBtreeByList();
+extern void TestMaxPathSum();
 
 #define TAG "TestSuite"
 
@@ -16,6 +17,9 @@ void TestSuite()
 
     printf("\n");
     TestCreateBtreeByList();
+
+    printf("\n");
+    TestMaxPathSum();
 
     printf("\n");
     DLogD(TAG, "<<< %s end", __FUNCTION__);

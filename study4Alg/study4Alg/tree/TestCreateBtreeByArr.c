@@ -33,5 +33,6 @@ void TestCreateBtreeByArr()
         }
         printf("%d", bTree[i]);
     }
+
     printf("\n");
 }

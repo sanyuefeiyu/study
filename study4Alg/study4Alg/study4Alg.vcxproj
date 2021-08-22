@@ -93,6 +93,7 @@
     <ClCompile Include="tree\TestCreateBtreeByArr.c" />
     <ClCompile Include="tree\TestCreateBtreeByList.c" />
     <ClCompile Include="tree\DTree.c" />
+    <ClCompile Include="tree\TestMaxPathSum.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBase\include\base\DError.h" />

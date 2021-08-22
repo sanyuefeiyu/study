@@ -42,6 +42,9 @@
     <ClCompile Include="tree\DTree.c">
       <Filter>源文件\tree</Filter>
     </ClCompile>
+    <ClCompile Include="tree\TestMaxPathSum.c">
+      <Filter>源文件\tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBase\include\DExport.h">

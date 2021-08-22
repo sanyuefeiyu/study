@@ -46,4 +46,6 @@ void TestCreateBtreeByList()
     printf("\n");
 
     ReleaseTree(root);
+
+    printf("\n");
 }
