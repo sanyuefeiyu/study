@@ -32,6 +32,36 @@ void CreateTreeByArr(int32_t arr[], int32_t numArr, TreeNode **root)
     CreateTreeByArrInternal(arr, numArr, root, pos);
 }
 
+static int32_t FindNode(int32_t arr[], int32_t numArr, int32_t value)
+{
+    for (int32_t i = 0; i < numArr; i++) {
+        if (arr[i] == value) {
+            return i;
+        }
+    }
+
+    return -1;
+}
+
+void CreateTreeByPreAndIn(int32_t preorder[], int32_t inorder[], int32_t numArr, TreeNode **root)
+{
+    if (numArr <= 0 || root == NULL) {
+        return;
+    }
+
+    *root = (TreeNode *)malloc(sizeof(TreeNode));
+    (*root)->data = preorder[0];
+    (*root)->left = NULL;
+    (*root)->right = NULL;
+
+    int32_t index = FindNode(inorder, numArr, preorder[0]);
+    int32_t leftSize = index;
+    int32_t rightSize = numArr - 1 - index;
+
+    CreateTreeByPreAndIn(preorder + 1, inorder, leftSize, &((*root)->left));
+    CreateTreeByPreAndIn(preorder + 1 + leftSize, inorder + 1 + leftSize, rightSize, &((*root)->right));
+}
+
 void ReleaseTree(TreeNode *root)
 {
     if (root == NULL) {

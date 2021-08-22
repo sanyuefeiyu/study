@@ -90,6 +90,7 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="TestSuite.c" />
+    <ClCompile Include="tree\TestCreateTreeByPreAndIn.c" />
     <ClCompile Include="tree\TestCreateBtreeByArr.c" />
     <ClCompile Include="tree\TestCreateBtreeByList.c" />
     <ClCompile Include="tree\DTree.c" />

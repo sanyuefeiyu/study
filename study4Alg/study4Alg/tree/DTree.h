@@ -19,6 +19,7 @@ extern "C" {
 #endif
 
 void CreateTreeByArr(int32_t arr[], int32_t numArr, TreeNode **root);
+void CreateTreeByPreAndIn(int32_t preorder[], int32_t inorder[], int32_t numArr, TreeNode **root);
 void ReleaseTree(TreeNode *root);
 
 void PrintTreePreorder(TreeNode *root);

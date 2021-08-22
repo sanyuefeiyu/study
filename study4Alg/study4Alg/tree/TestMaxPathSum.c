@@ -25,6 +25,7 @@ void TestMaxPathSum()
     TreeNode *root = NULL;
 
     CreateTreeByArr(arr, sizeof(arr) / sizeof(int), &root);
+
     PrintTreePreorder(root);
     printf("\n");
     PrintTreeInorder(root);
