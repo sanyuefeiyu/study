@@ -27,49 +27,52 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.c">
+    <ClCompile Include="..\..\..\src\main.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="TestSuite.c">
+    <ClCompile Include="..\..\..\src\TestSuite.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="tree\TestCreateBtreeByList.c">
+    <ClCompile Include="..\..\..\src\tree\DTree.c">
       <Filter>源文件\tree</Filter>
     </ClCompile>
-    <ClCompile Include="tree\TestCreateBtreeByArr.c">
+    <ClCompile Include="..\..\..\src\tree\TestCreateBtreeByArr.c">
       <Filter>源文件\tree</Filter>
     </ClCompile>
-    <ClCompile Include="tree\DTree.c">
+    <ClCompile Include="..\..\..\src\tree\TestCreateBtreeByList.c">
       <Filter>源文件\tree</Filter>
     </ClCompile>
-    <ClCompile Include="tree\TestMaxPathSum.c">
+    <ClCompile Include="..\..\..\src\tree\TestCreateTreeByPreAndIn.c">
       <Filter>源文件\tree</Filter>
     </ClCompile>
-    <ClCompile Include="tree\TestCreateTreeByPreAndIn.c">
+    <ClCompile Include="..\..\..\src\tree\TestMaxPathSum.c">
       <Filter>源文件\tree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DBase\include\DExport.h">
-      <Filter>DBase\include</Filter>
-    </ClInclude>
-    <ClInclude Include="DBase\include\base\DError.h">
-      <Filter>DBase\include\base</Filter>
-    </ClInclude>
-    <ClInclude Include="DBase\include\base\DFile.h">
-      <Filter>DBase\include\base</Filter>
-    </ClInclude>
-    <ClInclude Include="DBase\include\base\DLog.h">
-      <Filter>DBase\include\base</Filter>
-    </ClInclude>
-    <ClInclude Include="DBase\include\base\DMisc.h">
-      <Filter>DBase\include\base</Filter>
-    </ClInclude>
-    <ClInclude Include="DBase\include\base\DTime.h">
-      <Filter>DBase\include\base</Filter>
-    </ClInclude>
-    <ClInclude Include="tree\DTree.h">
+    <ClInclude Include="..\..\..\src\tree\DTree.h">
       <Filter>源文件\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\DBase\include\base\DBase.h">
+      <Filter>DBase\include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\DBase\include\base\DError.h">
+      <Filter>DBase\include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\DBase\include\base\DFile.h">
+      <Filter>DBase\include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\DBase\include\base\DLog.h">
+      <Filter>DBase\include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\DBase\include\base\DMisc.h">
+      <Filter>DBase\include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\DBase\include\base\DTime.h">
+      <Filter>DBase\include\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\DBase\include\DExport.h">
+      <Filter>DBase\include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
